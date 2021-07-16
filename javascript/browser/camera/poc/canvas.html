@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        /* img{
+            height:10vh;
+            width:10vw;
+        } */
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <canvas id="board"></canvas>
+    <script>
+        let board = document.getElementById("board");
+        board.height = window.innerHeight;
+        board.width = window.innerWidth;
+
+
+        let tool = board.getContext("2d");
+
+        tool.strokeStyle="yellow";
+        tool.lineWidth=10;
+
+        let isMouseDown = false;
+        document.body.addEventListener("mousedown",function(e){
+            let x = e.clientX;
+            let y =e.clientY;
+
+            tool.beginPath();
+            tool.moveTo(x,y);
+            isMouseDown=true;
+        })
+
+        document.body.addEventListener("mousemove",function(e){
+            let x = e.clientX;
+            let y =e.clientY;
+            if(isMouseDown==true){
+                tool.lineTo(x,y);
+                tool.stroke();
+            }
+
+            
+        })
+
+        document.body.addEventListener("mouseup",function(e){
+            let x = e.clientX;
+            let y =e.clientY;
+            tool.stroke();
+            isMouseDown=false;
+            
+        })
+
+
+
+
+        
+    </script>
+</body>
+
+</html>

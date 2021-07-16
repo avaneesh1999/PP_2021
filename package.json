@@ -1,0 +1,23 @@
+{
+  "name": "JAVASCRIPT",
+  "version": "1.0.0",
+  "main": "INTRO.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "chronium": "^0.0.6",
+    "core-util-is": "^1.0.2",
+    "nodemailer": "^6.5.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "puppeteer": "^8.0.0",
+    "request": "^2.88.2",
+    "sync": "^0.2.5",
+    "xlsx": "^0.16.9"
+  },
+  "description": ""
+}
