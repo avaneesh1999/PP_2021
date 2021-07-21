@@ -1,0 +1,64 @@
+
+.body{
+  /* // To make coloe equall to window size */
+  height: 100vh;
+  background-color:lightblue;
+}
+
+
+.app{
+  box-sizing: border-box;
+  text-align: center;
+  width: 550px;
+  border-radius:50px;
+
+}
+
+.input-container{
+  padding: 7px;
+  background-color:grey;
+  /* border-radius: 3px 3px 0 0 ; */
+  
+}
+
+.class-list{
+  border-radius: 3px;
+  padding:28px;
+  background-color:bisque;
+
+}
+
+li{
+  padding: 2px;
+  background-color:rgb(219, 149, 124)
+}
+
+/* .close{
+  background-color:rgb(207, 47, 47);
+  font-size:15px;
+  bottom: 2px;
+  
+
+} */
+
+.close{
+  padding: 7px;
+  border-radius: 2px;
+  border: none;
+  background: #333;
+  color: white;
+  font-weight: lighter;
+}
+
+.to-do-item {
+  padding: 10px 0 10px 0;
+  margin: 1px 0 1px 0;
+  border-top: 1px solid darken(#138796, 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-weight: lighter;
+  user-select: none;
+}

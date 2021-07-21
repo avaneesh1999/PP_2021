@@ -58,35 +58,37 @@ export default class Todo extends Component {
   render() {
     return (
       //JSX
-      <div>
+      <div className="body">
+      <div className="app">
         <div className="input-container">
           <input
             value={this.state.currTask}
             onChange={this.handleChange}
             type="text"
           ></input>
-          <button onClick={this.handleSubmit}>Add</button>
+          <button onClick={this.handleSubmit} className="add">+</button>
         </div>
         <div className="class-list">
-          <ul>
+          <ul >
             {this.state.tasks.map(
               function (tobj) {
                 return (
-                  <li key={tobj.txt}>
-                    <h1>{tobj.txt}</h1>
-                    <button
+                  <li className="to-do-item" key={tobj.txt}>
+                    <h1>{tobj.txt}<button className="close"
                       onClick={() => {
                         this.onDelete(tobj.id);
                       }}
                     >
-                      Delete
-                    </button>
+                      X
+                    </button></h1>
+                    
                   </li>
                 );
               }.bind(this)
             )}
           </ul>
         </div>
+      </div>
       </div>
     );
   }
