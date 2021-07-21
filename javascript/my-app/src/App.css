@@ -1,21 +1,28 @@
 
 .body{
   /* // To make coloe equall to window size */
+  display:flex;
   height: 100vh;
   background-color:lightblue;
+  padding: 100px;
 }
 
 
 .app{
+  /* display:flex; */
+  /* justify-content: center; */
+  /* align-items:center; */
   box-sizing: border-box;
   text-align: center;
   width: 550px;
   border-radius:50px;
+  /* centre an object */
+  margin: auto;
 
 }
 
 .input-container{
-  padding: 7px;
+  padding: 20px;
   background-color:grey;
   /* border-radius: 3px 3px 0 0 ; */
   
@@ -62,3 +69,48 @@ li{
   font-weight: lighter;
   user-select: none;
 }
+
+.add{
+  background-color: rgb(84, 214, 84);
+  border: none;
+  color: white;
+  padding: 14px 24px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input{
+
+  font-size: 26px;
+  margin: 4px 2px;
+
+}
+
+.close{
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 14px 24px;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  right: 100px;
+  
+}
+
+.header{
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+

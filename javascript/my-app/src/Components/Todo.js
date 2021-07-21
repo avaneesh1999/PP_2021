@@ -59,7 +59,9 @@ export default class Todo extends Component {
     return (
       //JSX
       <div className="body">
+      
       <div className="app">
+      <h1 className="header">TO-DO APPLICATION</h1>
         <div className="input-container">
           <input
             value={this.state.currTask}
@@ -74,13 +76,14 @@ export default class Todo extends Component {
               function (tobj) {
                 return (
                   <li className="to-do-item" key={tobj.txt}>
-                    <h1>{tobj.txt}<button className="close"
+                    <h1>{tobj.txt}</h1>
+                    <button className="close"
                       onClick={() => {
                         this.onDelete(tobj.id);
                       }}
                     >
                       X
-                    </button></h1>
+                    </button>
                     
                   </li>
                 );
