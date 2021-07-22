@@ -577,14 +577,39 @@
 // let x = 10;
 // let n = arr.length
 // let result = binarySearch(arr, 0, n - 1, x);
-// console.log(result);
+// // console.log(result);
 
-function longest_common_starting_substring(arr1){
-    var arr= arr1.concat().sort(),
-    a1= arr[0], a2= arr[arr.length-1], L= a1.length, i= 0;
-    //console.log(arr);
-    while(i< L && a1.charAt(i)=== a2.charAt(i)) i++;
-    return a1.substring(0, i);
-    }
+// function longest_common_starting_substring(arr1){
+//     var arr= arr1.concat().sort(),
+//     a1= arr[0], a2= arr[arr.length-1], L= a1.length, i= 0;
+//     //console.log(arr);
+//     while(i< L && a1.charAt(i)=== a2.charAt(i)) i++;
+//     return a1.substring(0, i);
+//     }
     
-console.log(longest_common_starting_substring(['go', 'google'])); 
+// console.log(longest_common_starting_substring(['go', 'google'])); 
+
+// const users= [
+//     {
+//         firstName: 'compass',
+//         LocX: 35,
+//         age: 312
+//     },
+//     {
+//         firstName: 'another',
+//         LocX: 52,
+//         age: 32
+//     }
+// ];
+
+
+
+// const ans=users.reduce(function(acc,curr){
+//     if(curr.age>30){
+//         acc.push(curr.firstName)
+//         return acc;
+//     }
+//     return acc;
+// },[]);
+
+// console.log(ans);
